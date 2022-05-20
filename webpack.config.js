@@ -2,7 +2,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 const path = require('path')
 
 module.exports = env => {
-  const { entryDir } = env
+  const { entryDir } = process.env
 
   return {
     entry: `./${entryDir || 'src'}/index.js`,
